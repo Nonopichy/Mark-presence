@@ -65,7 +65,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
           noites++;
           await reaction.message.guild.setName(`🌙: ${noites}, ⛅: ${dias}`);
         }
-        if (data >= 18 && data <= 23){
+        else if (data >= 18 && data <= 23){
           noites++;
           await reaction.message.guild.setName(`🌙: ${noites}, ⛅: ${dias}`);
         }
