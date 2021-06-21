@@ -74,7 +74,7 @@ client.on('messageReactionAdd', async (reaction, user) => {
      }
 
      else if (reaction.emoji.name === '⛅'){
-        if (data >= 6 && data <= 12){
+        if (data >= 6 && data <= 11){
           dias++;
           await reaction.message.guild.setName(`🌙: ${noites}, ⛅: ${dias}`);
         }
